@@ -9,12 +9,12 @@ using WebApiCar.Model;
 
 namespace WebApiCar.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class CarsController : ControllerBase
     {
 
-        static string conn = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=CarDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        static string conn = "Data Source=(localdb)\\ProjectsV13;Initial Catalog=CarDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         public static List<Car> carList = new List<Car>()
         {
@@ -59,9 +59,8 @@ namespace WebApiCar.Controllers
                 }
 
 
-                    }
-
-                return carList;
+            }
+            return carList;
         }
 
         // GET: api/Cars/5

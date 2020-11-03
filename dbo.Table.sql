@@ -1,0 +1,7 @@
+﻿CREATE TABLE Car
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [Vendor] NVARCHAR(50) NOT NULL, 
+    [Model] NVARCHAR(50) NOT NULL, 
+    [Price] INT NOT NULL
+)
